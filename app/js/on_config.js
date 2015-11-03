@@ -14,6 +14,13 @@ function OnConfig($stateProvider, $locationProvider, $urlRouterProvider) {
         title: 'Test'
     };
 
+    var event = {
+        name: 'event',
+        url: '/event',
+        templateUrl: 'event.html',
+        title: 'Event'
+    };
+
     var home = {
         name: 'home',
         url: '/',
@@ -32,7 +39,7 @@ function OnConfig($stateProvider, $locationProvider, $urlRouterProvider) {
 
     $stateProvider.state(test);
     $stateProvider.state(home);
-
+    $stateProvider.state(event);
     $stateProvider.state(about);
 
 
