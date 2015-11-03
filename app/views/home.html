@@ -1,1 +1,10 @@
-<div></div>
+<div class="panel">
+    <div class="panel-body">
+        <!--        This is the body which is the carousel-->
+        <uib-carousel interval="5000" no-wrap="false">
+            <uib-slide ng-repeat="slide in home.slides" active="slide.active">
+                <img ng-src="{{slide.image}}" style="margin:auto;">
+            </uib-slide>
+        </uib-carousel>
+    </div>
+</div>

@@ -9,6 +9,13 @@ function HomeCtrl() {
 
     // ViewModel
     var vm = this;
+    vm.slides = [
+        {
+            image: '../images/webslider1.jpeg'
+        }, {
+            image: '../images/webinterngx.jpeg'
+        }
+    ];
 
 }
 
