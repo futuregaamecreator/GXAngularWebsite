@@ -8,10 +8,17 @@ var controllersModule = require('./_index');
  */
 function TestCtrl() {
 
-  // ViewModel
-  var vm = this;
+    // ViewModel
+    var vm = this;
 
-  vm.title = 'I am a test!';
+    vm.alerts = [
+        {type: 'danger', msg: 'Oh snap! Change a few things up and try submitting again.'},
+        {type: 'success', msg: 'Well done! You successfully read this important alert message.'}
+    ];
+
+    vm.closeAlert = function (index) {
+        vm.alerts.splice(index, 1);
+    };
 
 }
 

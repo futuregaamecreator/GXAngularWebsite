@@ -1,1 +1,1 @@
-<h1 class="heading -large">{{ test.title }}</h1>
+  <uib-alert ng-repeat="alert in test.alerts" type="{{alert.type}}" close="test.closeAlert($index)">{{alert.msg}}</uib-alert>
