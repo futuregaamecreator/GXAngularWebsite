@@ -12,14 +12,14 @@
               crossorigin="anonymous">
         <link rel="stylesheet" href="css/main.css">
     </head>
-    <body>
-            <div  style="background-color: blue">
+    <body ng-controller="HeaderFooterCtrl as headerFooter">
+        <div style="background-color: blue">
                 <!--        This is the header with the logo and a bunch of state navigation buttons-->
                 <img style="width: 25%" src="../images/gxlogo1.png" alt="Sport">
-                <button>Home</button>
+                <button ng-click="headerFooter.navigateTo('home')">Home</button>
                 <button>Events</button>
                 <button>Party</button>
-                <button>About Us</button>
+                <button ng-click="headerFooter.navigateTo('about')">About Us</button>
                 <button>Contact</button>
             </div>
         <div ui-view></div>

@@ -6,14 +6,6 @@
 function OnConfig($stateProvider, $locationProvider, $urlRouterProvider) {
 
     $locationProvider.html5Mode(true);
-    var example = {
-        name: 'Example',
-        url: '/example',
-        controller: 'ExampleCtrl as home',
-        templateUrl: 'example.html',
-        title: 'Example'
-    };
-
     var test = {
         name: 'Test',
         url: '/test',
@@ -23,7 +15,7 @@ function OnConfig($stateProvider, $locationProvider, $urlRouterProvider) {
     };
 
     var home = {
-        name: 'Home',
+        name: 'home',
         url: '/',
         controller: 'HomeCtrl as home',
         templateUrl: 'home.html',
@@ -31,14 +23,13 @@ function OnConfig($stateProvider, $locationProvider, $urlRouterProvider) {
     };
 
     var about = {
-        name: 'About Us',
+        name: 'about',
         url: '/about',
         controller: 'AboutUsCtrl as about',
         templateUrl: 'about.html',
-        title: 'About'
+        title: 'About Us'
     };
 
-    $stateProvider.state(example);
     $stateProvider.state(test);
     $stateProvider.state(home);
 
