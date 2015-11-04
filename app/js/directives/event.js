@@ -11,9 +11,9 @@ function eventDirective() {
     restrict: 'A',
     scope:{
         detail:'&',
-        eventsrc:'='
+        src:'@'
     },
-   templateUrl:'../views/event-template.html'
+   templateUrl:'event-template.html'
    
   };
 

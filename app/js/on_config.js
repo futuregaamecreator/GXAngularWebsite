@@ -17,6 +17,7 @@ function OnConfig($stateProvider, $locationProvider, $urlRouterProvider) {
     var event = {
         name: 'event',
         url: '/event',
+        controller: 'EventCtrl as events',
         templateUrl: 'event.html',
         title: 'Event'
     };
